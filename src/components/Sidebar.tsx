@@ -1,6 +1,8 @@
 import { Box, Hidden, Typography } from "@mui/material";
 import { navLinks } from "../utils/navlink";
 
+import avatarImage from "../assets/fav.png";
+
 import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
@@ -97,9 +99,15 @@ const Sidebar = () => {
           ))}
         </Box>
       </Box>
-      {/* <Hidden smDown>
-      <img src={avatarImage} alt="avatar" style={{ borderRadius: "50%", width: 90, height: 90 }} />
-    </Hidden> */}
+      <Hidden smDown>
+        <Link to={"https://tusharupadhyay.vercel.app/"} target="blank">
+          <img
+            src={avatarImage}
+            alt="avatar"
+            style={{ borderRadius: "50%", width: 90, height: 90 }}
+          />
+        </Link>
+      </Hidden>
     </Box>
   );
 };

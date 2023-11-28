@@ -25,9 +25,9 @@ export const navLinks = [
     icon: bookmark,
     link: "/bookmarks",
   },
-  {
-    name: "Developer",
-    icon: developer,
-    link: "https://tusharupadhyay.vercel.app/",
-  },
+  // {
+  //   name: "Developer",
+  //   icon: developer,
+  //   link: "https://tusharupadhyay.vercel.app/",
+  // },
 ];
