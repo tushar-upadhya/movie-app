@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import Error from "./pages/error";
 import Tv from "./pages/tv series";
 import Movies from "./pages/movies";
-import Bookmarks from "./pages/bookmark/index";
+import Bookmarks from "./pages/bookmark";
 
 export const router = createBrowserRouter([
   {

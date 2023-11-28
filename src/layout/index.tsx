@@ -10,20 +10,17 @@ const Layout = ({ children }: ILayoutProps) => {
   return (
     <Box
       sx={{
-        backgroundColor: "161d2f",
-        padding: 2,
-        borderRadius: 2,
+        backgroundColor: "#10141F",
         display: "flex",
         flexDirection: {
-          xs: "row",
-          lg: "column",
+          xs: "column",
+          lg: "row",
         },
-        alignItems: "center",
-        justifyContent: "space-between",
-        width: {
-          sm: "100%",
-          lg: "200%",
-        },
+        color: "white",
+        padding: 3,
+        gap: 3,
+        overflowY: "hidden",
+        height: "100vh",
       }}
     >
       <Sidebar />

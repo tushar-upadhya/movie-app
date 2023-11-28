@@ -2,10 +2,32 @@ import homeIcon from "../assets/icons/icon-nav-home.svg";
 import MoveIcon from "../assets/icons/icon-nav-movies.svg";
 import tv from "../assets/icons/icon-nav-tv-series.svg";
 import bookmark from "../assets/icons/icon-nav-bookmark.svg";
+import developer from "../assets/icons/icon-developer.svg";
 
 export const navLinks = [
-  { name: "Home", icon: homeIcon, link: "/" },
-  { name: "Movie", icon: MoveIcon, link: "/movies" },
-  { name: "Tv Series", icon: tv, link: "/tv-series" },
-  { name: "Bookmark", icon: bookmark, link: "/bookmark" },
+  {
+    name: "Home",
+    icon: homeIcon,
+    link: "/",
+  },
+  {
+    name: "Movies",
+    icon: MoveIcon,
+    link: "/movies",
+  },
+  {
+    name: "TV Series",
+    icon: tv,
+    link: "/tv-series",
+  },
+  {
+    name: "Bookmarks",
+    icon: bookmark,
+    link: "/bookmarks",
+  },
+  {
+    name: "Developer",
+    icon: developer,
+    link: "https://tusharupadhyay.vercel.app/",
+  },
 ];
