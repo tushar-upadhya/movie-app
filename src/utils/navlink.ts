@@ -2,7 +2,6 @@ import homeIcon from "../assets/icons/icon-nav-home.svg";
 import MoveIcon from "../assets/icons/icon-nav-movies.svg";
 import tv from "../assets/icons/icon-nav-tv-series.svg";
 import bookmark from "../assets/icons/icon-nav-bookmark.svg";
-import developer from "../assets/icons/icon-developer.svg";
 
 export const navLinks = [
   {
@@ -25,9 +24,4 @@ export const navLinks = [
     icon: bookmark,
     link: "/bookmarks",
   },
-  // {
-  //   name: "Developer",
-  //   icon: developer,
-  //   link: "https://tusharupadhyay.vercel.app/",
-  // },
 ];
