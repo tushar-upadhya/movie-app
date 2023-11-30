@@ -6,16 +6,32 @@ import {
   Typography,
 } from "@mui/material";
 import Layout from "../../layout";
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useContext, useState } from "react";
 import searchIcon from "../../assets/icons/icon-search.svg";
 import TrendingList from "../../components/TrendingList";
 import RecommendedList from "../../components/RecommendedList";
+import { MovieDataType } from "../../data/data";
+import { MovieContext } from "../../context/movieContext";
 
 const Home = () => {
   const [search, setSearch] = useState("");
 
+  const [searchList, SetSearchList] = useState<MovieDataType[]>([]);
+
+  const { state } = useContext(MovieContext);
+  // console.log("state:", state);
+  const { movies } = state;
+
+  const trendingList = movies.filter((item) => item.isTrending === true);
+  const recommendedList = movies.filter((item) => item.isTrending !== true);
+
   const handleSearch = (e: { target: { value: SetStateAction<string> } }) => {
     setSearch(e.target.value);
+
+    const newList = movies.filter((movie) =>
+      movie.title.toLocaleLowerCase().includes(search.toLowerCase())
+    );
+    SetSearchList(newList);
   };
 
   return (

@@ -1,4 +1,5 @@
 {
   "editor.inlineSuggest.showToolbar": "onHover",
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "cSpell.words": ["BOOLMARK", "TOOGLE"]
 }
